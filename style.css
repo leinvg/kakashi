@@ -1,0 +1,944 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --background: #dce8ee;
+    --just-white: #f5f3f3;
+    --just-black: #000000;
+    --light: #ffffef;
+    --shadow: #1f1b17;
+    --hair: #a5a59a;
+    --hair-light: #c9c9c7;
+    --skin: #fde2a7;
+    --skin-shadow: #ff744a;
+    --tights: #151b22;
+    --tights-dark: #0f1318;
+    --tights-light: #1c2735;
+    --blue-band: #181a1d;
+    --blue-dark: #222635;
+    --metal-band: #999898;
+    --metal-light: #e6e6dc;
+    --metal-dark: #474742;
+    --sharingan: #ad0202;
+    --scar: #580808;
+    --jacket: #269759;
+    --jacket-2: #196b42;
+    --jacket-3: #0d3f26;
+    --book-orange: #fab41d;
+    --book-dark: #e98a1d;
+    --floor: #c5bfbf;
+}
+body {
+    background-color: rgb(90, 90, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.fondo {
+    background-color: var(--background);
+    position: relative;
+    display: flex;
+    width: 320px;
+    height: 320px;
+}
+
+
+/* Construcción del cabello y detalles */
+.hair {
+    background-color: var(--hair);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60px, -120px);
+    width: 112px;
+    height: 70px;
+    border-radius: 0 0 4px 16px;
+    overflow: hidden;
+}
+.hair-lights1 {
+    background-color: var(--hair-light);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 101px;
+    height: 65px;
+    border-radius: 0 0 4px 16px;
+}
+.hair-corte1 {
+    background-color: var(--background);
+    position: absolute;
+    left: -6px;
+    top: -26px;
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+}
+.hair-style1 {
+    background-color: var(--hair-light);
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.hair-lights2 {
+    background-color: var(--hair);
+    position: absolute;
+    left: 26%;
+    top: -6%;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px 0 0 30px;
+}
+.hair-lights3 {
+    background-color: var(--hair-light);
+    position: absolute;
+    left: 14%;
+    top: 78%;
+    width: 50px;
+    height: 8px;
+    border-radius: 0px;
+}
+.hair-corte2 {
+    background-color: var(--background);
+    position: absolute;
+    left: 36px;
+    top: -10px;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+}
+.hair-corte3 {
+    background-color: var(--background);
+    position: absolute;
+    left: 26px;
+    top: -14px;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+}
+.hair-style2 {
+    background-color: var(--hair-light);
+    position: absolute;
+    left: 32px;
+    top: 4px;
+    width: 74px;
+    height: 50px;
+    border-radius: 40px 0 0 0;
+}
+.hair-shadows {
+    background-color: var(--hair);
+    position: absolute;
+    left: 88%;
+    top: 4px;
+    transform: translate(39%, 0);
+    width: 7px;
+    height: 50px;
+    border-radius: 40px 0 0 0;
+}
+.hair-corte4 {
+    background-color: var(--background);
+    position: absolute;
+    left: 92px;
+    top: -48px;
+    width: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+.hair-style3 {
+    background-color: var(--hair);
+    position: absolute;
+    left: 87px;
+    top: -52px;
+    width: 14px;
+    height: 12px;
+    border-radius: 0 80px 0 0;
+}
+
+
+/* Construcción de la cabeza, rostro, banda y detalles */
+.head {
+    background-color: var(--skin);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50px);
+    width: 80px;
+    height: 52px;
+    border-radius: 0 0 0 8px;
+}
+.head-band {
+    background-color: var(--blue-band);
+    position: absolute;
+    left: -6px;
+    width: 96px;
+    height: 18px;
+    /* opacity: 0.5; */
+    border-radius: 4px;
+}
+.hair-band-light1 {
+    background-color: var(--blue-dark);
+    position: absolute;
+    width: 86px;
+    height: 12px;
+    border-radius: 3px;
+    opacity: 0.5;
+}
+.head-band__metal {
+    background-color: var(--metal-band);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 14px;
+    top: -2px;
+    width: 56px;
+    height: 18px;
+    border-radius: 4px;
+}
+.hair-band-light2 {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 16px;
+    border-radius: 4px;
+}
+.head-band__circles-light {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: -4%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+.head-band__circles1 {
+    background-color: var(--metal-dark);
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.head-band__circles2 {
+    background-color: var(--metal-dark);
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.head-band__circles3 {
+    background-color: var(--metal-dark);
+    position: absolute;
+    left: 4%;
+    top: 10%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.head-band__circles4 {
+    background-color: var(--metal-dark);
+    position: absolute;
+    left: 4%;
+    top: 70%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.head-band__position {
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 18px;
+    border-radius: 4px;
+}
+.head-band__sign-center {
+    background-color: var(--metal-light);
+    position: relative;
+    width: 12px;
+    height: 10px;
+    border: 2px solid var(--just-black);
+    border-radius: 10px;
+}
+.head-band__sign-center-fix1 {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-0%, -25%);
+    width: 16px;
+    height: 8px;
+    border-radius: 20px 20px 20px 0;
+}
+.head-band__sign-center-fix2 {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -16%);
+    width: 8px;
+    height: 6px;
+    border: 2px solid var(--just-black);
+    border-radius: 6px;
+}
+.head-band__sign-center-fix3 {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    width: 3px;
+    height: 3px;
+    border-radius: 0px 0 0 7px;
+}
+.head-band__sign-center-fix4 {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+.head-band__sign-center-fix5 {
+    background-color: var(--just-black);
+    position: absolute;
+    left: 47%;
+    top: 45%;
+    width: 3px;
+    height: 2px;
+    transform: translate(0, -8%);
+    border-radius: 2px 0 0 2px;
+}
+.head-band__sign-left {
+    position: absolute;
+    left: 34%;
+    top: 44%;
+    width: 9px;
+    height: 6px;
+    border: 2px solid var(--just-black);
+    border-radius: 3px 0 0 0;
+}
+.head-band__sign-right {
+    background-color: var(--just-black);
+    position: absolute;
+    left: 53%;
+    top: 13%;
+    width: 2px;
+    height: 4px;
+    transform: rotate(54deg);
+    border-radius: 4px;
+}
+.head-band__sign-right-fix1 {
+    background-color: var(--metal-light);
+    position: absolute;
+    left: 51%;
+    top: 33%;
+    width: 8px;
+    height: 6px;
+    transform: rotate(54deg);
+    border-radius: 0;
+}
+.head-hair {
+    background-color: var(--hair);
+    position: absolute;
+    top: 18px;
+    left: 68px;
+    width: 20px;
+    height: 13px;
+    border-radius: 0px 2px 2px 0px;
+}
+.head-hair__lights2 {
+    background-color: var(--hair-light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 13px;
+    border-radius: 0 2px 2px 0;
+}
+.head-hair__ear {
+    background-color: var(--skin);
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 0 12px 12px 0;
+}
+.head-hair__lights1 {
+    background-color: var(--skin-shadow);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 5px;
+    height: 4px;
+    border-radius: 0 12px 12px 0;
+    opacity: 0.3;
+}
+.head-scar {
+    background-color: var(--scar);
+    position: relative;
+    left: 65%;
+    top: 18px;
+    width: 3px;
+    height: 12px;
+    border-radius: 0 0 0 4px;
+}
+.head-eyes {
+    /* background-color: blue; */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 14px;
+    top: 20px;
+    width: 44px;
+    height: 14px;
+}
+.head-eyes__both {
+    background-color: var(--just-black);
+    position: relative;
+    width: 10px;
+    height: 6px;
+    border-radius: 0 0 20px 20px;
+}
+.head-eyes__both--sharingan {
+    background-color: var(--sharingan);
+    left: 1%;
+}
+.head-eyes__pupil--sharingan {
+    background-color: #3a0101;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 5px;
+    height: 4px;
+    border-radius: 0 0 5px 5px;
+}
+.head-mask {
+    background-color: var(--tights-dark);
+    position: absolute;
+    left: -6px;
+    top: 31px;
+    width: 95px;
+    height: 26px;
+    border-radius: 4px 4px 4px 8px;
+}
+.head-mask-lights1 {
+    background-color: var(--tights-light);
+    position: absolute;
+    width: 85px;
+    height: 20px;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+/* Construcción del cuerpo y detalles:
+    cuerpo principal:                       body
+    cuello:                                 body-neck
+    chaleco márgenes:                       body-jacket
+    chaleco parte cuello derecho:           body-jacket__neck-right
+    chaleco parte cuello izquierdo:         body-jacket__neck-left
+    chaleco hombro derecho:                 body-jacket__shoulder-right
+    chaleco hombro izquierdo:               body-jacket__shoulder-left
+    chaleco pecho derecho:                  body-jacket__chest-right
+    chaleco pecho izquierdo:                body-jacket__chest-left
+    chaleco borde inferior derecho:         body-jacket__border-right
+    chaleco borde inferior izquierdo:       body-jacket__border-left
+    chaleco cremayera:                      body-jacket__zipper
+
+    Following. */
+
+.body {
+    background-color: var(--tights-dark);
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10px);
+    width: 100px;
+    height: 70px;
+    border-radius: 10px 0 10px 10px;
+}
+.body-shadow {
+    background-color: var(--tights-light);
+    position: absolute;
+    width: 80px;
+    height: 66px;
+    border-radius: 10px 0 10px 6px;
+    opacity: 0.5;
+}
+.body-neck {
+    background-color: var(--just-black);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-46%, 10%);
+    width: 70px;
+    height: 10px;
+}
+.body-jacket {
+    /* background-color: yellow; */
+    position: relative;
+    left: -4px;
+    top: -20px;
+    width: 108px;
+    height: 82px;
+    /* opacity: 0.5; */
+}
+.body-jacket__neck-left {
+    background-color: var(--jacket-2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-52px, -2px);
+    width: 44px;
+    height: 20px;
+    border-radius: 6px 0 0 0;
+}
+.body-jacket__shadow7 {
+    background-color: var(--shadow);
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    width: 44px;
+    height: 16px;
+    border-radius: 4px 0 0 0;
+    opacity: 0.6;
+}
+.body-jacket__neck-right {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: 54px;
+    top: 8px;
+    width: 54px;
+    height: 22px;
+    border-radius: 6px 4px 4px 6px;
+}
+.body-jacket__shadow6 {
+    background-color: var(--jacket);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 17px;
+    border-radius: 6px 2px 4px 2px;
+    opacity: 0.5;
+}
+.body-jacket__shoulder-left {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-66px, 12px);
+    width: 32px;
+    height: 10px;
+    border-radius: 7px 4px 4px 7px;
+    overflow: hidden;
+}
+.body-jacket__shadow8 {
+    background-color: var(--jacket-2);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 32px;
+    height: 6px;
+    border-radius: 7px 4px 4px 7px;
+    opacity: 0.6;
+}
+.body-jacket__chest-left {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: -4px;
+    top: 28px;
+    width: 34px;
+    height: 42px;
+    border-radius: 4px 4px 0px 4px;
+    overflow: hidden;
+}
+.body-jacket__shadow5 {
+    background-color: var(--jacket);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 31px;
+    height: 39px;
+    border-radius: 4px 2px 2px 0;
+    opacity: 0.5;
+}
+.body-jacket__chest-right {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: 34px;
+    top: 28px;
+    width: 74px;
+    height: 42px;
+    /* border: 1px solid black; */
+    border-radius: 4px 4px 4px 0px;
+    overflow: hidden;
+}
+.body-jacket__shadow4 {
+    background-color: var(--jacket);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 62px;
+    height: 39px;
+    border-radius: 4px 4px 4px 0px;
+    opacity: 0.5;
+}
+.body-jacket__border-left {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: -4px;
+    top: 70px;
+    width: 34px;
+    height: 6px;
+    border-radius: 4px 0px 4px 4px;
+    overflow: hidden;
+}
+.body-jacket__shadow2 {
+    background-color: var(--jacket);
+    position: absolute;
+    left: 0%;
+    top: -50%;
+    width: 68px;
+    height: 6px;
+    border-radius: 0px 2px 2px 0px;
+    opacity: 0.5;
+}
+.body-jacket__border-right {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: 34px;
+    top: 70px;
+    width: 74px;
+    height: 6px;
+    border-radius: 0px 4px 4px 4px;
+    overflow: hidden;
+}
+.body-jacket__shadow1 {
+    background-color: var(--jacket);
+    position: absolute;
+    left: 0%;
+    top: -50%;
+    width: 68px;
+    height: 6px;
+    border-radius: 0px 2px 2px 0px;
+    opacity: 0.5;
+}
+.body-jacket__zipper {
+    background-color: var(--just-white);
+    position: absolute;
+    left: 28px;
+    top: 31px;
+    width: 8px;
+    height: 42px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.body-jacket__shadow3 {
+    background-color: var(--shadow);
+    position: absolute;
+    left: 58%;
+    top: 0;
+    width: 8px;
+    height: 42px;
+    border-radius: 0;
+    opacity: 0.5;
+}
+.body-arm {
+    /* background-color: yellow; */
+    position: absolute;
+    left: 90%;
+    top: 40%;
+    transform: translate(-14%, -28%);
+    width: 50px;
+    height: 50px;
+    /* opacity: 0.5; */
+}
+.body-jacket__shoulder-right {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: 50%;
+    top: -24%;
+    transform: translate(-64%, 0);
+    width: 32px;
+    height: 10px;
+    border-radius: 7px 4px 4px 7px;
+    overflow: hidden;
+}
+.body-arm__lights1 {
+    background-color: var(--jacket-2);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, -8%);
+    width: 28px;
+    height: 8px;
+    border-radius: 0px 2px 2px 2px;
+    opacity: 0.5;
+}
+.body-arm__one {
+    background-color: var(--tights);
+    position: absolute;
+    left: 13px;
+    top: -10px;
+    width: 16px;
+    height: 36px;
+    /* transform: rotate(0deg); */
+    border-radius: 9px;
+}
+.body-arm__two {
+    background-color: var(--tights);
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    width: 24px;
+    height: 16px;
+    border-radius: 0 0 8px 0;
+}
+.body-arm__shadows1 {
+    background-color: var(--tights-dark);
+    position: absolute;
+    left: 42%;
+    top: -10%;
+    transform: translate(0, 0%);
+    width: 8px;
+    height: 31px;
+    border-radius: 0 0 8px 0;
+    opacity: 0.7;
+}
+.body-arm__shadows2 {
+    background-color: var(--tights-dark);
+    position: absolute;
+    left: 10%;
+    top: 36%;
+    transform: translate(0, 0%);
+    width: 16px;
+    height: 8px;
+    border-radius: 0;
+    opacity: 0.7;
+}
+.body-jacket__pocket {
+    background-color: var(--jacket-3);
+    position: absolute;
+    left: 0%;
+    top: 12%;
+    width: 6px;
+    height: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.body-arm__lights2 {
+    background-color: var(--jacket-2);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 3px;
+    height: 22px;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.body-book {
+    /* background-color: blue; */
+    position: absolute;
+    left: -40px;
+    width: 44px;
+    height: 60px;
+    /* opacity: 0.5; */
+    overflow: hidden;
+}
+.body-book__cover-left {
+    background-color: var(--book-orange);
+    position: absolute;
+    left: -9px;
+    top: 10px;
+    width: 28px;
+    height: 22px;
+    transform: rotate(28deg);
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 -3px 0 0px var(--just-white);
+}
+.body-book__cover-right {
+    background-color: var(--book-dark);
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    width: 28px;
+    height: 22px;
+    transform: rotate(-28deg);
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 -3px 0 0px var(--just-white);
+}
+.body-book__cover-center {
+    background-color: var(--book-dark);
+    position: absolute;
+    left: 19px;
+    top: 16px;
+    width: 6px;
+    height: 20px;
+    box-shadow: 0 -3px 0 0px var(--just-white);
+}
+.body-book__hand {
+    background-color: var(--tights);
+    position: absolute;
+    left: 12px;
+    top: 26px;
+    width: 20px;
+    height: 18px;
+    border-radius: 6px 6px 8px 8px;
+}
+.body-book__fingers {
+    background-color: var(--skin);
+    position: absolute;
+    top: -25%;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.body-book__shadows1 {
+    background-color: var(--tights-dark);
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    width: 10px;
+    height: 14px;
+    border-radius: 0 0 8px 0;
+    opacity: 0.7;
+}
+.body-book__shadows2 {
+    background-color: var(--light);
+    position: absolute;
+    left: 0%;
+    top: -6%;
+    width: 12px;
+    height: 8px;
+    border-radius: 0 2px 4px 0;
+    opacity: 0.7;
+}
+
+
+/* Construcción de las piernas y detalles:
+    área marco de las piernas:                  legs
+    piernas:                                    legs-both
+    bandas blancas:                             legs-both__band
+    botas:                                      legs-both__boot
+    suela de botas:                             legs-both__sole
+    dedos del pie:                              legs-both__toe
+    efecto de sombra de piernas:                legs-both__shadows
+    efecto de luz de dedos:                     legs-both__lights
+
+    Following. */
+
+.legs {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    top: 50%;
+    transform: translate(-48%, 74px);
+    width: 62px;
+    height: 34px;
+}
+.legs-both {
+    background-color: var(--tights);
+    position: relative;
+    width: 22px;
+}
+.legs-both__band {
+    background-color: var(--just-white);
+    position: absolute;
+    top: 14px;
+    width: 22px;
+    height: 6px;
+}
+.legs-both__boot {
+    background-color: var(--blue-band);
+    position: absolute;
+    top: 20px;
+    width: 22px;
+    height: 14px;
+}
+.legs-both__toe {
+    background-color: var(--skin);
+    position: absolute;
+    left: -4px;
+    top: 24px;
+    width: 18px;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.legs-both__sole {
+    background-color: var(--blue-dark);
+    position: absolute;
+    left: -6px;
+    top: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+}
+.legs-both__lights {
+    background-color: var(--light);
+    position: absolute;
+    left: 0%;
+    top: -4%;
+    transform: translate(0, 0%);
+    width: 14px;
+    height: 4px;
+    border-radius: 4px;
+}
+.legs-both__shadows {
+    background-color: var(--tights-dark);
+    position: absolute;
+    left: 50%;
+    width: 11px;
+    height: 34px;
+    opacity: 0.7;
+}
+
+/* Construcción del suelo base:
+    suelo:                              floor
+    efecto de luz del suelo:            floor__lights
+
+    Following. */
+
+.floor {
+    background-color: var(--metal-band);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-54%, 108px);
+    width: 164px;
+    height: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.floor__lights {
+    background-color: var(--light);
+    position: absolute;
+    transform: translate(0%, -30%);
+    width: 154px;
+    height: 4px;
+    border-radius: 6px;
+    opacity: 0.7;
+}
