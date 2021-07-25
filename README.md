@@ -4,4 +4,4 @@ Ilustración en HTML y CSS de Kakashi Hatake. (Personaje ficticio de la serie an
   
 https://alincut.github.io/kakashi/
   
-### **Check it out!**
+### Check it out!
